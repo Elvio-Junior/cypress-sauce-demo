@@ -1,0 +1,20 @@
+{
+  "name": "cypress-sauce-demo",
+  "version": "1.0.0",
+  "description": "Este projeto tem o objetivo de demonstrar conceitos e formas de utilizar o framework Cypress para a criação de testes e2e e de API",
+  "main": "index.js",
+  "scripts": {
+    "cy-open:dev": "cypress open --env configFile=development",
+    "cy-run:dev": "cypress run --env configFile=development",
+    "cy-run-video:dev": "cypress run --env configFile=development --config video=true",
+    "cy-run-backend:dev": "cypress run --env configFile=development --spec cypress/e2e/backend/viaCep.cy.js",
+    "cy-run-sauce:dev": "cypress run --env configFile=development --spec cypress/e2e/sauceDemo/loginPage.cy.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.17.4",
+    "jsonschema": "^1.4.1"
+  }
+}
